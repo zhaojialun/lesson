@@ -2,6 +2,8 @@ var calculator = {
 	memory : 0 ,
 	number : 0 ,
 	
+	
+	
 	numberPressed : function(num) {
 		console.log("number pressed: "+num) ;
 		this.number = this.number * 10 + num ;
@@ -12,12 +14,11 @@ var calculator = {
 	},
 	multiplyPressed : function() {
 		
-		alert("multiplyPress pressed: ") ;	
+		alert("multiply pressed: ") ;	
 	},
-	equalPressed : function(num) {
-		
-		
-		console.log("equal pressed") ;
+	equalPressed : function() {
+		 $("#display").text("3") ; 
+		alert("equal pressed") ;
 	},
 	dotPressed : function() {
 		console.log("dot pressed") ;
@@ -26,7 +27,6 @@ var calculator = {
 		console.log("clear pressed") ;
 	},
 	allClearPressed : function() {
-	number=0;
 		console.log("all clear pressed") ;
 	},
 };
